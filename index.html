@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои Социальные сети | Журавский Роман</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f4;
+            min-height: 100vh;
+        }
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            background: #fff;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .name {
+            font-size: 24px;
+            margin: 16px 0 8px 0;
+            color: #333;
+            text-align: center;
+            width: 100%;
+        }
+        .social-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 28px 0;
+            align-items: center;
+            justify-content: center;
+        }
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 220px;
+            height: 56px;
+            background: #ccc;
+            text-decoration: none;
+            color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.15s, box-shadow 0.15s;
+            font-size: 0;
+            padding: 0;
+        }
+        .social-btn .icon-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+        .social-btn img {
+            width: 32px;
+            height: 32px;
+            display: block;
+        }
+        .social-btn.telegram { background: #0088cc; }
+        .social-btn.instagram { background: radial-gradient(circle at 30% 110%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+        .social-btn.youtube { background: #ff0000; }
+        .social-btn:hover {
+            transform: scale(1.04);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+        @media (max-width: 480px) {
+            .avatar {
+                width: 100px;
+                height: 100px;
+            }
+            .name {
+                font-size: 20px;
+            }
+            .social-btn {
+                width: 120px;
+                height: 36px;
+            }
+            .social-btn img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="Screenshot_12.png" class="avatar" >
+    <h1 class="name">Журавский Роман</h1>
+    <div class="social-buttons">
+        <a href="https://t.me/like_this" target="_blank" class="social-btn telegram">
+            <span class="icon-wrapper">
+                <img src="icons8-telegram-48.png" alt="Telegram">
+            </span>
+        </a>
+        <a href="https://www.instagram.com/zroman_/" target="_blank" class="social-btn instagram">
+            <span class="icon-wrapper">
+                <img src="icons8-instagram-48.png" alt="Instagram">
+            </span>
+        </a>
+        <!-- Закомментированный блок YouTube -->
+        <!--
+        <a href="https://youtube.com/@yourusername" target="_blank" class="social-btn youtube">
+            <span class="icon-wrapper">
+                <img src="youtube-logo.png" alt="YouTube">
+            </span>
+        </a>
+        -->
+    </div>
+</body>
+</html>
